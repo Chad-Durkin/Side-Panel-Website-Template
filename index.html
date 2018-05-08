@@ -11,21 +11,23 @@
   </head>
   <body>
   <div class="container-fluid">
-      <div class="row">
+      <div class="row main-row">
   			<!-- nav bar -->
           <div class="col-sm-3 tabbable tabs-left">
       				<ul class="nav nav-tabs">
                 <div class="user-info">
-                  <li class="user-title">Akio Bowden</li>
-                  <li class="job-title">3D Artist</li>
-                  <img src="img/placeholder-user.png" alt="Akio Bowden" class="user-img">
+                  <li class="user-title"><h1>Akio Bowden</h1></li>
+                  <li class="job-title"><h2>3D Artist</h2></li>
+                  <figure>
+                    <img src="img/placeholder-user.png" alt="Akio Bowden" class="user-img">
+                  </figure>
                 </div>
       					<li class="active"><a href="#home" data-toggle="tab">All</a></li>
       					<li><a href="#3dwork" data-toggle="tab">3d Work</a></li>
       					<li><a href="#3dprints" data-toggle="tab">3d Prints</a></li>
       					<li><a href="#photography" data-toggle="tab">Photography</a></li>
-      					<li><a href="#about" data-toggle="tab">About</a></li>
-      					<li><a href="#contact" data-toggle="tab">Contact</a></li>
+      					<li><a href="#about" data-toggle="tab">About Me</a></li>
+      					<!-- <li><a href="#contact" data-toggle="tab">Contact</a></li> -->
       				</ul>
           </div>
           <!-- tab content -->
@@ -34,40 +36,51 @@
     					<div class="tab-pane active" id="home">
                   <table>
                     <tr>
-                      <td class="table-img"><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></td>
-                      <td class="table-img"><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></td>
-                      <td class="table-img"><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></td>
+                      <td class="table-img"><figure><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></figure></td>
+                      <td class="table-img"><figure><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></figure></td>
+                      <td class="table-img"><figure><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></figure></td>
                     </tr>
                     <tr>
-                      <td class="table-img"><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></td>
-                      <td class="table-img"><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></td>
-                      <td class="table-img"><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></td>
+                      <td class="table-img"><figure><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></figure></td>
+                      <td class="table-img"><figure><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></figure></td>
+                      <td class="table-img"><figure><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></figure></td>
                     </tr>
                     <tr>
-                      <td class="table-img"><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></td>
-                      <td class="table-img"><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></td>
-                      <td class="table-img"><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></td>
+                      <td class="table-img"><figure><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></figure></td>
+                      <td class="table-img"><figure><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></figure></td>
+                      <td class="table-img"><figure><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></figure></td>
                     </tr>
                   </table>
     					</div>
+
+              <div class="tab-pane" id="3dwork">
+                <div class="">
+                  <table>
+                    <tr>
+                      <td class="table-img"><figure><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></figure></td>
+                      <td class="table-img"><figure><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></figure></td>
+                      <td class="table-img"><figure><img class="img-content" src="img/placeholder-img.png" alt="placeholder"></figure></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
     					<div class="tab-pane" id="about">
     						<div class="">
-    							<h1>About Tab</h1>
+    							<h1>About Me</h1>
     							<p>because they are the most important for an encyclopedia to have, as determined by the community of participating editors. They may also be of interest to readers as an alternative to lists of overview articles.</p>
-    						</div>
-    					</div>
-
-    					<div class="tab-pane" id="services">
-    						<div class="">
-    							<h1>Services Tab</h1>
-    							<p>meant to identify articles which deserve editor attention because they are the most important for an encyclopedia to have, as determined by the community of participating editors. They may also be of interest to readers as an alternative to lists of overview articles.</p>
+                  <button><a href="#contact" data-toggle="tab">Contact Me</a></button>
     						</div>
     					</div>
 
     					<div class="tab-pane" id="contact">
     						 <div class="">
-    							<h1>Contact Tab</h1>
-    							<p>deserve editor attention because they are the most important for an encyclopedia to have, as determined by the community of participating editors. They may also be of interest to readers as an alternative to lists of overview articles.</p>
+    							<h1>Send me an email!</h1>
+                  <form>
+                    <textarea placeholder="Add message here..." cols="90" rows="8" style="resize: none;"></textarea>
+                    <br>
+                    <button id="send-email-btn">Send</button>
+                  </form>
     						 </div>
     					</div>
     				<!-- </div> -->
