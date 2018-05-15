@@ -1,20 +1,26 @@
 /*------ Left Side Nav Bar Menu CSS ------*/
-.container-fluid {
-  /*position: relative;*/
-}
-
-.tab-content > .tab-pane,
-.pill-content > .pill-pane {
-  display: none;
-}
-
-.tab-content > .active,
-.pill-content > .active {
-  display: block;
-}
-
 .tabs-left {
-  /*position: relative;*/
+  height: 100%;
+  min-height: 490px;
+  width: 20%;
+  max-width: 290px;
+  /* padding-left: 20px; */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  min-width: 260px;
+  background-color: #95afc0;
+}
+
+.tabs-left > .nav-tabs {
+  /* background-color: #95afc0; */
+  min-height: 100%;
+  padding-left: 5px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  border-bottom: 0;
 }
 
 .tabs-left > .nav-tabs > li {
@@ -26,20 +32,6 @@
   min-width: 74px;
   margin-right: 0;
   margin-bottom: 3px;
-}
-
-.tabs-left > .nav-tabs {
-  background-color: grey;
-  text-align: center;
-  float: left;
-  height: 820px;
-  width: 240px;
-  padding-top: 40px;
-  /*padding-bottom: 100%;*/
-  /*padding-left: 5px;*/
-  margin-right: 19px;
-  border-right: 1px solid #ddd;
-  border-bottom: 0;
 }
 
 .tabs-left > .nav-tabs > li > a {
@@ -72,36 +64,34 @@
 
 /*tab content css*/
 .tab-content {
-  padding-right: 100px !important;
+  margin-left: 30%; /* Same as the width of the sidenav */
+  padding: 0px 10px;
   padding-bottom: 20px;
-  text-align: center;
+  position: absolute;
+  overflow: auto;
 }
 
 .table-img {
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .img-content {
   padding:1px;
   border:1px solid #021a40;
-  width: 80%;
-  height: 80%;
+  width: 240px;
+  height: 240px;
 }
 
-body {
-   min-width:1080px;        /* Suppose you want minimum width of 1000px */
-   width: auto !important;  /* Firefox will set width as auto */
-   width:1080px;            /* As IE6 ignores !important it will set width as 1000px; */
-   /*position: absolute;*/
-   height: 820px;
-   /*height: 100%;*/
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  /*overflow: auto;*/
+/* Navbar responsive design */
+@media screen and (max-height: 500px) {
+  .user-img {
+    display: none;
+  }
 }
 
-html {
-  height: 100%;
+/* Tab content responsive design */
+@media screen and (max-width: 900px) {
+  .tab-content {
+    margin-left: 280px;
+  }
 }
